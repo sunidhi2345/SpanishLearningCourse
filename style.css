@@ -1,0 +1,240 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --white: #ffffff;
+  --black: #111111;
+  --grey: #808080;
+  --blue: #0000ff;
+  --brightblue: #0096ff;
+  --lightgrey: #bababab5;
+  --green: #098217;
+  --aliceblue: #f0f8ff;
+  --darkblue: #0275d8;
+  --midnightblue: #191970;
+  --whitesmoke: #f5f5f5;
+  --silver: #c0c0c0;
+  --bluebackground: #016e97;
+  --lightgray: #d3d3d3;
+  --solitude: #e9ecef;
+  --darkgrey: #a9a9a9;
+}
+section {
+  padding-top: 25px;
+  overflow: hidden;
+}
+/*header*/
+#text-box {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#login-box {
+  border: 2px solid var(--black);
+  background-color: var(--white);
+}
+#paragraph {
+  color: var(--white);
+}
+#logo {
+  display: inline-flex;
+  color: var(--white);
+  margin-left: 12%;
+  margin-top: 4%;
+}
+#logo img {
+  height: 25px;
+  margin-right: 0.3rem;
+}
+
+/*Frequently asked Questions-*/
+
+.questions .question-box {
+  margin-bottom: 15px;
+  background: var(--white);
+  padding: 25px;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+.questions .question-box p {
+  font-size: 17px;
+}
+.questions .question-box:hover {
+  background: var(--whitesmoke);
+}
+
+/*button*/
+.button-wrapper {
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+/*Pricing Model*/
+
+.horizontalLine {
+  width: 90%;
+  border-bottom: 2px solid var(--silver);
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#pricingModel p {
+  font-weight: 600;
+}
+#pricingModel {
+  margin-top: 25px;
+}
+.advancedColor {
+  background: radial-gradient(var(--darkblue) 2%, var(--midnightblue));
+}
+#pricingModel h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+}
+
+/* modal in header */
+#header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bluebackground);
+  height: 100vh;
+  width: 98.9vw;
+}
+#header-below {
+  margin: auto;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav p {
+  font-size: 24px;
+  font-weight: 500;
+}
+#modal {
+  display: none;
+}
+#login-box-modal {
+  border: 2px solid var(--black);
+  width: 25%;
+  background-color: var(--white);
+}
+#modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+#login-box {
+  width: 25vw;
+}
+
+@media only screen and (max-width: 1100px) {
+  #modal {
+    display: block;
+  }
+  #login-box {
+    display: none;
+  }
+  #header {
+    height: 80vh;
+  }
+}
+
+/*instructors*/
+#instructors {
+  background-color: var(--lightgray);
+}
+.entitySize {
+  font-size: 22px;
+}
+.instructor-image {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.instructor-image:hover {
+  transform: scale(1.1);
+}
+
+/*Caraousel*/
+.studentImage {
+  height: 100px;
+  width: 100px;
+  background: url("./assets/istockphoto-1139495117-612x612.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 58px;
+}
+.studentImage2 {
+  height: 100px;
+  width: 100px;
+  background: url("./assets/15.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 58px;
+}
+.studentImage3 {
+  height: 100px;
+  width: 100px;
+  background: url("./assets/61.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 58px;
+}
+
+/*footer*/
+#footer {
+  background-color: var(--black);
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+/*Accordian*/
+.courses-accordian {
+  background-color: var(--lightgray);
+}
+.coursesContainer {
+  background-color: var(--solitude);
+}
+.heading-wrapper img {
+  height: 47px;
+  width: 100px;
+}
+details {
+  font-size: 35px;
+  background-color: var(--darkgrey);
+}
+details[open] > li {
+  padding: 0px;
+}
+details p {
+  margin-bottom: 0px;
+  font-size: 20px;
+  padding-left: 30px;
+  color: var(--black);
+}
+summary {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+details:hover {
+  opacity: 0.8;
+}
+.accordian-Heading {
+  font-size: 25px;
+  padding: 8px;
+  padding-left: 30px;
+  color: var(--black);
+}
